@@ -1,0 +1,283 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="portfolio.scss">
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+
+<body>
+
+    <!-- <div id="cursor">
+
+    </div> -->
+    <div class="container">
+        <video class="back-vid" loop autoplay muted plays-inline src="assets/galaxy.mp4" type="video/mp4"></video>
+    </div>
+
+    <navbar>
+        <div class="navigation-menu">
+            <div class="left-nav">
+                <span>&lt; Rohan Prakash /> </span>
+            </div>
+            <div class="right-nav">
+                <ul class="nav-list" id="navlist">
+                    <li> <a class="nav-link" href="#home">Home</a></li>
+                    <li><a class="nav-link" href="#about">About</a> </li>
+                    <li><a class="nav-link" href="#project">Project</a></li>
+                    <li><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
+    </navbar>
+    <!-- <main> -->
+    <div id="home" class="main-content section">
+        <left id="left">
+            <div class="intro-text">
+                <span>I am </span>
+                <span class="tag-color"> &lt; </span>
+                <span id="my-span"></span>
+                <span class="tag-color"> /> </span>
+            </div>
+
+            <div class="intro-text-desc">
+                <span class="glow">I am currently working as SDE <br> at Amadeus Labs;</span>
+
+            </div>
+            <div class="cv-download">
+                <button id="download-cv">Download Resume</button>
+            </div>
+        </left>
+        <right>
+            <div class="image">
+                <img id="rightAstro" src="assets/astrosmgsmall.png" alt="my-profile-image">
+                <!-- <img class="connect-icon" src="assets/icons/insta.svg" alt="insta"> -->
+            </div>
+        </right>
+    </div>
+
+    <div id="about" class="about-i section">
+        <div class="about-content about-content-i">
+            <h1 style="color: white; position: absolute; top: 0; margin-bottom: 10px;">Who am I ?</h1>
+
+
+            <div id="aboutMe" class="about-me">
+                <div class="text-section">
+                    <h1>About</h1>
+                    <span>Hello! I'm a Software Engineer with 2.4 years
+                        of experience at Amadeus Labs. I specialize in Angular development and am passionate about
+                        solving complex problems.
+                    </span>
+                    <ul>
+                        <li><img src="assets/icons/work.svg" alt="work"> <span>2.4 Years Experience</span></li>
+                        <li><img src="assets/icons/angular.svg" alt="angular"><span>Angular Developer</span></li>
+                        <li><img src="assets/icons/graduate.svg" alt="graduate"><span>LPU Graduate</span></li>
+                    </ul>
+                </div>
+                <!-- <div class="image-section">
+                    <img src="assets/rohanimg.png" alt="rohan">
+                </div> -->
+            </div>
+
+            <div class="about-me-carousel">
+                <div class="carousel-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide content1">
+                            <div class="item-content">
+                                #live to explore
+                            </div>
+                        </div>
+                        <div class="swiper-slide content2">
+                            <div class="item-content">
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide content3">
+                            <div class="item-content">
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide content4">
+                            <div class="item-content">
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide content5">
+                            <div class="item-content">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+
+        <div class="tech-stack">
+            <div id="#banner" class="banner">
+                <div class="row"><span class="header-section-text" style="color: #fff"># My Tech Stacks
+                    </span></div>
+                <div class="row">
+                    <img class="javascript" src="assets/icons/javascript.svg" alt="javascript">
+                    <img class="css" src="assets/icons/css.svg" alt="css">
+                    <img class="html" src="assets/icons/html.svg" alt="html">
+                    <img src="assets/icons/typescript.svg" alt="typescript">
+                    <img src="assets/icons/database-svgrepo-com.svg" alt="database">
+                </div>
+                <div class="row">
+                    <img src="assets/icons/angular.svg" alt="angular">
+                    <img class="git" src="assets/icons/git.svg" alt="git">
+                    <img src="assets/icons/nodejs.svg" alt="nodejs">
+                    <img class="java" src="assets/icons/java.svg" alt="java">
+                    <img class="python" src="assets/icons/python.svg" alt="python">
+                </div>
+                <div class="row">
+                    <img src="assets/icons/azure-svgrepo-com.svg" alt="azure">
+                    <img src="assets/icons/icons8-c++.svg" alt="c++">
+                    <img src="assets/icons/format.png" alt="css">
+                    <img src="assets/icons/postman.svg" alt="postman">
+                    <img src="assets/icons/docker.svg" alt="docker">
+                </div>
+                <div class="row">
+                    <h1 style="color:white">My Projects</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="project" class="project-content section">
+        <div class="row">
+            <div class="project-item1">
+                <img src="assets/astroProject.png" alt="ecomm">
+                <h1>Portfolio App</h1>
+
+                <h2>Key highlights</h2>
+                <ul>
+                    <li>Used HTML, CSS, Js</li>
+                    <li>Gsap, swiper slider used for animations</li>
+                    <li>Interactive theming and responsive</li>
+                </ul>
+
+                <button onclick ="onAstroClick()">Demo</button>
+            </div>
+            <div class="project-item2">
+                <img src="assets/squeryimg.png" alt="ecomm">
+                <h1>Squery App</h1>
+
+                <h2>Key highlights</h2>
+                <ul>
+                    <li>Used Angular for frontend</li>
+                    <li>Many tools to help, capitalize, word count more</li>
+                    <li>you can play game from options</li>
+                </ul>
+
+                <button class=""><a style="color: white; text-decoration: none;" href="https://rohan7546.github.io/squery/" target="_blank">Demo</a></button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="project-item3">
+                <img src="assets/ecomm.png" alt="ecomm">
+                <h1>Ecommerce App</h1>
+
+                <h2>Key highlights</h2>
+                <ul>
+                    <li>Used Angular for frontend</li>
+                    <li>Used NodeJs for backend</li>
+                    <li>Involves signup, login, homepage, cartpage, checkout</li>
+                </ul>
+
+                <button class=""><a style="color: white; text-decoration: none;" href="https://github.com/Rohan7546/Ecommerce">Demo</a></button>
+            </div>
+            <div class="project-item4">
+                <img src="assets/imagenewport.png" alt="ecomm">
+                <h1>Portfolio App</h1>
+
+                <h2>Key highlights</h2>
+                <ul>
+                    <li>Used Angular for frontend</li>
+                    <li>Used GSAP for animations</li>
+                    <li>Light color theme, simple format and responsive</li>
+                </ul>
+
+                <button class=""><a style="color: white; text-decoration: none;" href="https://rohan7546.github.io/portfolio/" target="_blank">Demo</a></button>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="about-content section">
+        <p style="color: white;font-style: italic;font-size: 18px;">If you want to know more about me or my work,<br> or
+            if you would just
+            like to say hello,<br> send me a message. I'd love to hear from you.👋</p>
+        <div class="contact-me">
+
+            <div class="contact-section">
+                <div class="contact-form">
+                    <form onsubmit="sendMail()">
+                        <div class="row">
+                            <label for="name">Name</label>
+                            <input required id="name" type="text" placeholder="Your Name" />
+
+                        </div>
+                        <div class="row">
+
+                            <label for="email">Email</label>
+                            <input required id="email" type="email" placeholder="Your@email.com">
+                        </div>
+                        <div class="row">
+                            <label for="message">Message</label>
+                            <textarea placeholder="Type here" required spellcheck="false" id="message" name=""
+                                id=""></textarea>
+                        </div>
+                        <button>Submit</button>
+                    </form>
+                </div>
+                <div class="connect-with-me">
+                    <h2>Email</h2>
+                    <span>rohan15397@gmail.com</span>
+                    <h2>Social</h2>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/__rohan__prakash/" target="_blank"><img class="instagram"
+                                src="assets/icons/insta.svg" alt="instagram"></a>
+                        <a href="https://www.linkedin.com/in/rohan15397/" target="_blank"><img class="linkedin"
+                                src="assets/icons/linkedin.svg" alt="linkedin"></a>
+                        <a href="https://github.com/Rohan7546" target="_blank"><img class="github"
+                                src="assets/icons/github.svg" alt="github"></a>
+
+                    </div>
+                    <h2>You Can Whatsapp Me Directly</h2>
+                    <a href="https://wa.me/919304969133?text=Hi"><img class="whatsapp" src="assets/icons/whatsapp.svg"
+                            alt="Whatsapp"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- </main> -->
+    <h2 class="glow">Hello world</h2>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+        integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/TextPlugin.min.js"
+        integrity="sha512-8BkFnMa5pqmphA7XoSbkjP2qX7Gqlkel2C+p1g1AH1tW4cBJs2tumC0Zn9eNRBOKbe3dW9OtbYh/vpkGuZNTMw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/split.js/1.6.2/split.min.js"
+        integrity="sha512-to2k78YjoNUq8+hnJS8AwFg/nrLRFLdYYalb18SlcsFRXavCOTfBF3lNyplKkLJeB8YjKVTb1FPHGSy9sXfSdg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+        integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="portfolio.js"></script>
+</body>
+
+</html>
